@@ -1,0 +1,8 @@
+<svg width="66" height="66" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="0.75" y="0.75" width="64.5" height="64.5" rx="32.25" stroke="#ECECEC" stroke-width="1.5"/>
+<path d="M32.735 25.6527L34.7158 23.6719C36.9461 21.4416 39.8659 20.5165 42.9561 20.3654C44.1581 20.3066 44.759 20.2772 45.2409 20.7591C45.7229 21.241 45.6934 21.842 45.6346 23.0439C45.4834 26.134 44.5583 29.0539 42.3281 31.2842L40.3473 33.265C38.7161 34.8962 38.2523 35.36 38.5947 37.1294C38.9327 38.481 39.2598 39.7898 38.277 40.7726C37.0849 41.9647 35.9974 41.9647 34.8053 40.7726L25.2274 31.1947C24.0352 30.0026 24.0352 28.9151 25.2274 27.723C26.2101 26.7402 27.519 27.0673 28.8705 27.4052C30.6399 27.7477 31.1038 27.2839 32.735 25.6527Z" stroke="#0052CC" stroke-width="1.5" stroke-linejoin="round"/>
+<path d="M39.6611 26.3334H39.6731" stroke="#0052CC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M20.3333 45.6667L26.9999 39" stroke="#0052CC" stroke-width="1.5" stroke-linecap="round"/>
+<path d="M28.3333 45.6667L30.9999 43" stroke="#0052CC" stroke-width="1.5" stroke-linecap="round"/>
+<path d="M20.3333 37.6667L22.9999 35" stroke="#0052CC" stroke-width="1.5" stroke-linecap="round"/>
+</svg>
