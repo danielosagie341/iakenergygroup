@@ -8,6 +8,7 @@ import Services from './pages/Services';
 import Projects from './pages/Projects';
 import Sustainability from './pages/Sustainability';
 import Careers from './pages/Careers';
+import Contact from './pages/Contact';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/sustainability" element={<Sustainability />} />
         <Route path="/careers" element={<Careers />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
     </div>

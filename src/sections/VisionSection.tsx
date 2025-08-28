@@ -13,7 +13,7 @@ interface VisionSectionProps {
 }
 
 const VisionSection: React.FC<VisionSectionProps> = ({
-  title = "🚀 Vision Highlights",
+  title = "Vision Highlights",
   subtitle = "Guiding Values behind Our Dedication to powering Africa with Sustainable Energy",
   className = ""
 }) => {

@@ -1,7 +1,14 @@
 import React from 'react';
+import ProjectsHero from '../sections/ProjectsHero';
+import ProjectSection from '../sections/ProjectSection';
 
 const Projects: React.FC = () => {
-  return <div className="h-screen flex justify-center text-black items-center">Projects Page</div>;
+  return (
+    <div>
+        <ProjectsHero />
+        <ProjectSection />
+    </div>
+  );
 };
 
 export default Projects;

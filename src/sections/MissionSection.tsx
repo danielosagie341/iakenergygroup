@@ -13,7 +13,7 @@ interface MissionSectionProps {
 }
 
 const MissionSection: React.FC<MissionSectionProps> = ({
-  title = "🌍 Mission Highlights",
+  title = "Mission Highlights",
   subtitle = "Guiding Values behind Our Dedication to powering Africa with Sustainable Energy",
   className = ""
 }) => {

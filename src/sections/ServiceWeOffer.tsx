@@ -4,12 +4,15 @@ import ServiceCard from '../components/ServiceCard';
 import image1 from '../assets/images/serviceImageOne.svg';
 import image2 from '../assets/images/serviceImageTwo.svg';
 import image3 from '../assets/images/serviceImageThree.svg';
+import { handleServiceClick as handleServiceClickUtil } from '../utils/serviceUtils';
 
 const ServicesWeOffer: React.FC = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [currentService, setCurrentService] = useState<string | null>(null);
 
   const services = [
     {
+      id: 'Upstream Exploration',
       image: image1,
       title: 'Upstream E&P',
       description: 'Accelerating exploration and production. Delivered 20% faster time-to-first-oil across three West African basins.',
@@ -17,6 +20,7 @@ const ServicesWeOffer: React.FC = () => {
       background: '#E6EEFA'
     },
     {
+      id: 'Midstream Infrastructure',
       image: image2,
       title: 'Midstream Infrastructure',
       description: 'Safe, efficient transport of resources. Over 500 km of pipelines with 99% uptime in Nigeria & Ghana.',
@@ -24,6 +28,7 @@ const ServicesWeOffer: React.FC = () => {
       background: '#FFE6E6'
     },
     {
+      id: 'Downstream-Marketing',
       image: image3,
       title: 'Downstream and Marketing',
       description: 'Reliable energy products for industries and communities. 95% on-time delivery to partners across West Africa.',
@@ -31,6 +36,7 @@ const ServicesWeOffer: React.FC = () => {
       background: '#E6EEFA'
     },
     {
+      id: 'Power Generation',
       image: image1,
       title: 'Power Generation',
       description: 'Clean, scalable energy. 12 GW capacity, including Nigeria\'s first hybrid gas-to-solar plant.',
@@ -47,6 +53,10 @@ const ServicesWeOffer: React.FC = () => {
     setCurrentSlide((prev) => (prev - 1 + services.length) % services.length);
   };
 
+    const handleServiceClick = (serviceId: string) => {
+      handleServiceClickUtil(serviceId, setCurrentService);
+    };
+
   return (
     <section className="bg-white py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -55,7 +65,7 @@ const ServicesWeOffer: React.FC = () => {
             Services We Offer
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Our services cover the full energy value chain — from exploration to power generation — helping 
+            Our services cover the full energy value chain, from exploration to power generation, helping 
             governments and industries secure reliable, efficient, and future-ready energy infrastructure.
           </p>
         </div>
@@ -67,6 +77,8 @@ const ServicesWeOffer: React.FC = () => {
               <ServiceCard
                 key={index}
                 imageSrc={service.image}
+                onClick={handleServiceClick}
+                linkHref='/services'
                 title={service.title}
                 description={service.description}
                 linkText={service.linkText}
@@ -96,8 +108,10 @@ const ServicesWeOffer: React.FC = () => {
                     <ServiceCard
                       imageSrc={service.image}
                       title={service.title}
+                      onClick={handleServiceClick}
                       description={service.description}
                       linkText={service.linkText}
+                      linkHref='/services'
                       bg={service.background}
                     />
                   </div>

@@ -16,16 +16,9 @@ const Header: React.FC = () => {
     { name: 'Careers', path: '/careers' },
   ];
 
-  const scrollToFooter = () => {
-    const footer = document.getElementById('footer');
-    if (footer) {
-      footer.scrollIntoView({ behavior: 'smooth' });
-    }
-    setIsMenuOpen(false);
-  };
 
   return (
-    <header className="lg:bg-white shadow-sm absolute w-full top-0 left-0 lg:relative z-50">
+    <header className="lg:bg-white shadow-sm absolute w-full top-0 left-0 lg:fixed z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16 lg:h-20">
           {/* Logo */}
@@ -54,13 +47,18 @@ const Header: React.FC = () => {
                 {item.name}
               </Link>
             ))}
-            <Button
-              text="Get in Touch"
-              onClick={scrollToFooter}
-              backgroundColor="#ef4444"
-              textColor="white"
-              className="hover:bg-red-600"
-            />
+
+            <Link
+              key="Home"
+              to="/contact"
+            >
+              <Button
+                text="Get in Touch"
+                backgroundColor="#ef4444"
+                textColor="white"
+                className="hover:bg-red-600"
+              />
+            </Link>
           </nav>
 
           {/* Mobile menu button */}
@@ -105,14 +103,19 @@ const Header: React.FC = () => {
                 </Link>
               ))}
               <div className="px-3 py-2">
-                <Button
-                  text="Get in Touch"
-                  onClick={scrollToFooter}
-                  backgroundColor="#ef4444"
-                  textColor="white"
-                  width="100%"
-                  className="hover:bg-red-600"
-                />
+                <Link
+                  key="Home"
+                  to="/contact"
+                >
+                  <Button
+                    text="Get in Touch"
+                    backgroundColor="#ef4444"
+                    textColor="white"
+                    width="100%"
+                    className="hover:bg-red-600"
+                    onClick={() => setIsMenuOpen(false)}
+                  />
+                </Link>
               </div>
             </div>
           </div>

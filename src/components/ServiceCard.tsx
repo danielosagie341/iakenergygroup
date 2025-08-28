@@ -9,6 +9,7 @@ interface ServiceCardProps {
   linkText: string;
   linkHref?: string;
   onLinkClick?: () => void;
+  onClick?: (id: string) => void;
 }
 
 const ServiceCard: React.FC<ServiceCardProps> = ({
@@ -19,6 +20,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
   linkText,
   linkHref = '#',
   onLinkClick,
+  onClick
 }) => {
   const handleLinkClick = (e: React.MouseEvent) => {
     if (onLinkClick) {
@@ -51,7 +53,10 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
         {/* Red underlined link */}
         <a 
           href={linkHref}
-          onClick={handleLinkClick}
+          onClick={() => {
+            handleLinkClick
+             onClick
+          }}
           className="text-red-600 hover:text-red-400 font-medium text-sm inline-flex items-center group/link"
         >
           <span className="underline w-full mt-1 transition-colors duration-200">{linkText}</span>

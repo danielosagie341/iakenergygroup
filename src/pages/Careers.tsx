@@ -1,7 +1,16 @@
 import React from 'react';
+import CareersHero from '../sections/CareersHero';
+import WhyWorkWithUsSection from '../sections/WhyWorkWithUs';
+import LifeAtIAK from '../sections/LifeAtIAK';
 
 const Careers: React.FC = () => {
-  return <div className="h-screen flex justify-center text-black items-center">Careers Page</div>;
+  return (
+    <>
+      <CareersHero />
+      <WhyWorkWithUsSection />
+      <LifeAtIAK />
+    </>
+  );
 };
 
 export default Careers;

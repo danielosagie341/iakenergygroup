@@ -8,6 +8,7 @@ interface ImpactCardProps {
   title: string;
   description: string;
   titleColor?: string;
+  descriptionClass?: string;
 }
 
 const ImpactCard: React.FC<ImpactCardProps> = ({
@@ -15,7 +16,8 @@ const ImpactCard: React.FC<ImpactCardProps> = ({
   iconColor,
   title,
   description,
-  titleColor
+  titleColor,
+  descriptionClass
 }) => {
   return (
     <div className="text-left shadow-md hover:shadow-lg transition-shadow duration-300 rounded-xl p-10 space-y-4">
@@ -30,7 +32,7 @@ const ImpactCard: React.FC<ImpactCardProps> = ({
       </h3>
       
       {/* Description */}
-      <p className="text-sm text-gray-600 leading-relaxed">
+      <p className={`${descriptionClass}text-sm text-gray-600 leading-relaxed`}>
         {description}
       </p>
     </div>

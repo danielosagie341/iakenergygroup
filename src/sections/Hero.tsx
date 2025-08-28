@@ -2,6 +2,7 @@
 import React from 'react';
 import Button from '../components/Button';
 import backgroundImage from '../assets/images/heroImageOne.svg';
+import { scrollToElement } from '../utils/scrollToFooter';
 
 const Hero: React.FC = ({}) => {
   return (
@@ -32,25 +33,32 @@ const Hero: React.FC = ({}) => {
           
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button
-              text="Explore Our Projects"
-              backgroundColor="#ef4444"
-              textColor="white"
-              className="hover:bg-red-600 text-base px-8 py-3"
-            />
-            <Button
-              text="Learn About Our Impact"
-              backgroundColor="rgba(255, 255, 255, 0.1)"
-              textColor="white"
-              borderColor="white"
-              className="hover:bg-white hover:text-gray-900 backdrop-blur-sm text-base px-8 py-3"
-            />
+            
+              <Button
+                text="Explore Our Projects"
+                onClick={() => scrollToElement("exploreProjects", () => {})}
+                backgroundColor="#ef4444"
+                textColor="white"
+                className="hover:bg-red-600 text-base px-8 py-3"
+              />
+            
+              <Button
+                text="Learn About Our Impact"
+                onClick={() => scrollToElement("OurProvenImpact", () => {})}
+                backgroundColor="rgba(255, 255, 255, 0.1)"
+                textColor="white"
+                borderColor="white"
+                className="hover:bg-white hover:text-gray-900 backdrop-blur-sm text-base px-8 py-3"
+              />
           </div>
         </div>
       </div>
       
       {/* Scroll Indicator - Optional */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
+      <div 
+        className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
+        onClick={() => scrollToElement("footer", () => {})}
+      >
         <div className="animate-bounce">
           <svg 
             className="w-6 h-6 text-white" 

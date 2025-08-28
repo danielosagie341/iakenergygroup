@@ -3,7 +3,7 @@ import React from "react";
 import clsx from "clsx";
 
 interface ButtonProps {
-  text: string;
+  text: any;
   width?: string;
   backgroundColor?: string;
   textColor?: string;

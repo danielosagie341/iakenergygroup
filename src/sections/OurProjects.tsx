@@ -32,7 +32,7 @@ const OurProjects: React.FC = () => {
       secondTitle: 'National CNG Initiative',
       description: 'This deepwater drilling project offshore Nigeria used the Tiger I Drillship. We maximized hydrocarbon recovery with real-time monitoring and advanced well interventions, all while upholding strict safety and environmental standards.',
       imageSrc: serviceImageTwo,
-      linkText: 'View Our Downstream Projects',
+      linkText: 'View Our National CNG Initiative',
       backgroundColor: 'bg-red-50'
     },
     {
@@ -44,7 +44,7 @@ const OurProjects: React.FC = () => {
       secondTitle: 'Turnkey Gas-Fired Power Plant',
       description: 'This deepwater drilling project offshore Nigeria used the Tiger I Drillship. We maximized hydrocarbon recovery with real-time monitoring and advanced well interventions, all while upholding strict safety and environmental standards.',
       imageSrc: serviceImageThree,
-      linkText: 'View Our Downstream Projects',
+      linkText: 'View Our Turnkey Gas-Fired Power Plant',
       backgroundColor: 'bg-blue-50'
     },
   ];
@@ -58,7 +58,7 @@ const OurProjects: React.FC = () => {
   };
 
   return (
-    <section className="bg-white py-16">
+    <section id='exploreProjects' className="bg-white py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
@@ -89,6 +89,7 @@ const OurProjects: React.FC = () => {
                       firstTitle={project.firstTitle}
                       secondTitle={project.secondTitle}
                       description={project.description}
+                      linkHref='/projects'
                       imageSrc={project.imageSrc}
                       linkText={project.linkText}
                       backgroundColor={project.backgroundColor}
