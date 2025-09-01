@@ -98,11 +98,11 @@ const WhoWeAre: React.FC = () => {
                 
                 {value.position === 'right' && (
                   <>
-                    <div className=" w-[45%]"></div>
+                    <div className=" w-[45%] bg-blue-500"></div>
                     <div className="absolute left-1/2 transform -translate-x-1/2 -translate-y-2">
                       <RedIcon iconSrc={value.icon} />
                     </div>
-                    <div className='lg:w-1/2 flex justify-end'>
+                    <div className='lg:w-1/2 pl-52 lg:pl-0 flex justify-end'>
                         <div className="lg:w-3/4 lg:pl-12">
                             <div className="inline-flex items-center space-x-3 mb-2">
                                 <span className="bg-blue-100 text-blue-600 text-sm font-semibold px-3 py-1 rounded-full">

@@ -10,6 +10,8 @@ const ServicesWeOffer: React.FC = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [currentService, setCurrentService] = useState<string | null>(null);
 
+  console.log('Current Service:', currentService);
+
   const services = [
     {
       id: 'Upstream Exploration',

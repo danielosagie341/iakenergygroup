@@ -27,7 +27,7 @@ const Header: React.FC = () => {
               <img 
                 src={logoSrc} 
                 alt="IAK Energy Group" 
-                className="h-8 lg:h-20 w-auto"
+                className="h-10 lg:h-14 w-auto"
               />
             </Link>
           </div>

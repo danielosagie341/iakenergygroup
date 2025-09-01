@@ -10,9 +10,10 @@ const GeneralInquiries: React.FC = () => {
   return (
     <section className="py-16 md:py-24 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-12 items-start">
+        <div>
+        {/* <div className="grid lg:grid-cols-2 gap-12 items-start"> */}
           {/* Left Column - Form */}
-          <div>
+          {/* <div>
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
               General Inquiries
             </h2>
@@ -20,7 +21,7 @@ const GeneralInquiries: React.FC = () => {
               For all general questions, comments, or feedback, please use the form below.
             </p>
             
-            <form className="space-y-6">
+            <form className="space-y-6 text-black">
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
                   <label htmlFor="fullName" className="block text-sm font-medium text-gray-700 mb-2">
@@ -77,7 +78,7 @@ const GeneralInquiries: React.FC = () => {
                 Submit Enquiry
               </button>
             </form>
-          </div>
+          </div> */}
 
           {/* Right Column - Map */}
           <div className="lg:pl-8">

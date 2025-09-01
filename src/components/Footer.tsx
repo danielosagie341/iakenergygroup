@@ -13,7 +13,7 @@ const Footer: React.FC = ({}) => {
     <footer id="footer" className="bg-blue-50 bg-opacity-50 pt-16 pb-8 relative">
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className='absolute lg:top-0 left-0 lg:w-full -z-10 scale-[75%] lg:h-full lg:px-44 rotate-90 lg:rotate-0'>
+        <div className='absolute lg:top-0 left-0 w-full -z-10 scale-[75%] h-full lg:px-44 rotate-90 lg:rotate-0 opacity-10'>
             <img className=' w-full h-full object-fit' src={IAKBackgroundLogo} alt="logo" />
         </div>
         {/* Desktop Layout */}
@@ -98,7 +98,7 @@ const Footer: React.FC = ({}) => {
         <div className="lg:hidden space-y-8 mb-8">
           {/* Logo and Description */}
           <div>
-            <img src={logoSrc} alt="IAK Energy Group" className="h-8 w-auto mb-4 -z-10" />
+            <img src={logoSrc} alt="IAK Energy Group" className="h-16 w-auto mb-4 -z-10" />
             <p className="text-gray-600 text-sm leading-relaxed mb-6">
               Join us as we build the future of Africa's energy landscape—
               illuminating pathways to prosperity and resilience for 

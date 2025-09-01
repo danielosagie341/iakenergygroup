@@ -23,17 +23,11 @@ import tankerTruck from '../assets/images/tanker-truck.svg';
 import downstreamImage from '../assets/images/downstreamImage.svg';
 import innovationImage from '../assets/images/innovationImage.svg';
 import fire from '../assets/images/fire.svg';
-import infrastructure from '../assets/images/infrastructure.svg';
 import power from '../assets/images/power.svg';
-import lightning from '../assets/images/lightning.svg';
-import battery from '../assets/images/battery.svg';
-import worker from '../assets/images/worker.svg';
 import epccImage from '../assets/images/epccImage.svg';
 import marineLogisticsImage from '../assets/images/marineLogisticsImage.svg';
-import globe from '../assets/images/globe.svg';
 import bus from '../assets/images/busWhite.svg';
 import box from '../assets/images/boxWhite.svg';
-import anchor from '../assets/images/anchor.svg';
 
 // Define interfaces for our data structures
 interface Capability {
