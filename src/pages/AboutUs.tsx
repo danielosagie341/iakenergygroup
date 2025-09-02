@@ -3,7 +3,7 @@ import AboutUsHero from '../sections/AboutUsHero';
 import MissionSection from '../sections/MissionSection';
 import VisionSection from '../sections/VisionSection';
 import MapSection from '../sections/MapSection';
-import InvestorMemberSection from '../sections/InvestorMemberSection';
+// import InvestorMemberSection from '../sections/InvestorMemberSection';
 import GallerySection from '../sections/GallerySection';
 
 const AboutUs: React.FC = () => {
@@ -14,7 +14,7 @@ const AboutUs: React.FC = () => {
         <VisionSection />
         <GallerySection />
         <MapSection />
-        <InvestorMemberSection />
+        {/* <InvestorMemberSection /> */}
     </>
   );
 };

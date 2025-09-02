@@ -13,8 +13,8 @@ const Footer: React.FC = ({}) => {
     <footer id="footer" className="bg-blue-50 bg-opacity-50 pt-16 pb-8 relative">
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className='absolute lg:top-0 left-0 w-full -z-10 scale-[75%] h-full lg:px-44 rotate-90 lg:rotate-0 opacity-10'>
-            <img className=' w-full h-full object-fit' src={IAKBackgroundLogo} alt="logo" />
+        <div className='absolute lg:top-0 left-0 md:w-full md:h-full flex items-center -z-10 lg:px-44 rotate-90 lg:rotate-0 opacity-10'>
+            <img className=' w-full md:h-full object-fit' src={IAKBackgroundLogo} alt="logo" />
         </div>
         {/* Desktop Layout */}
         <div className="hidden lg:grid lg:grid-cols-4 z-10 lg:gap-8 lg:mb-12">
@@ -29,7 +29,7 @@ const Footer: React.FC = ({}) => {
             {/* Social Links */}
             <div className="flex space-x-4">
               <a 
-                href="https://www.linkedin.com" 
+                href="https://www.linkedin.com/company/iak-energy-group/?viewAsMember=false" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="block cursor-pointer transition-all duration-200 hover:scale-110"
@@ -37,7 +37,7 @@ const Footer: React.FC = ({}) => {
                 <img src={linkedInSrc} alt="LinkedIn" className="w-5 h-5 hover:opacity-80" />
               </a>
               <a 
-                href="https://www.instagram.com" 
+                href="https://www.instagram.com/iakenergygroup" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="block cursor-pointer transition-all duration-200 hover:scale-110"
@@ -45,7 +45,7 @@ const Footer: React.FC = ({}) => {
                 <img src={instagramSrc} alt="Instagram" className="w-5 h-5 hover:opacity-80" />
               </a>
               <a 
-                href="https://www.twitter.com" 
+                href="https://www.twitter.com/iakenergygroup" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="block cursor-pointer transition-all duration-200 hover:scale-110"
@@ -80,7 +80,6 @@ const Footer: React.FC = ({}) => {
           <div>
             <h3 className="text-gray-900 font-semibold mb-4">Contact</h3>
             <div className="space-y-3 text-sm text-gray-600">
-              <p>Phone: 234 XXX XXX XXXX</p>
               <p>
                 Email:{' '}
                 <a href="mailto:info@iakenergygroup.com" className="text-red-600 hover:underline">
@@ -107,7 +106,7 @@ const Footer: React.FC = ({}) => {
             {/* Social Links */}
             <div className="flex space-x-4">
               <a 
-                href="https://www.linkedin.com" 
+                href="https://www.linkedin.com/company/iak-energy-group/?viewAsMember=false" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="block cursor-pointer transition-all duration-200 hover:scale-110"
@@ -115,7 +114,7 @@ const Footer: React.FC = ({}) => {
                 <img src={linkedInSrc} alt="LinkedIn" className="w-5 h-5 hover:opacity-80" />
               </a>
               <a 
-                href="https://www.instagram.com" 
+                href="https://www.instagram.com/iakenergygroup" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="block cursor-pointer transition-all duration-200 hover:scale-110"
@@ -123,7 +122,7 @@ const Footer: React.FC = ({}) => {
                 <img src={instagramSrc} alt="Instagram" className="w-5 h-5 hover:opacity-80" />
               </a>
               <a 
-                href="https://www.twitter.com" 
+                href="https://www.twitter.com/iakenergygroup" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="block cursor-pointer transition-all duration-200 hover:scale-110"
@@ -157,7 +156,6 @@ const Footer: React.FC = ({}) => {
             <div>
               <h3 className="text-gray-900 font-semibold mb-3">Contact</h3>
               <div className="space-y-2 text-sm text-gray-600">
-                <p>Phone: 234 XXX XXX XXXX</p>
                 <p>
                   Email:{' '}
                   <a href="mailto:info@iakenergygroup.com" className="text-red-600 hover:underline">

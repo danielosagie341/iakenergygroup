@@ -12,7 +12,7 @@ interface GallerySectionProps {
 }
 
 const GallerySection: React.FC<GallerySectionProps> = ({
-  title = "🖼️ Galleries",
+  title = "Galleries",
   subtitle = "Check out how IAK Energy Group is lighting up Africa with their power solutions!",
   className = ""
 }) => {

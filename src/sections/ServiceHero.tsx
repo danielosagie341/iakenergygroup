@@ -11,7 +11,7 @@ interface serviceHeroProps {
 }
 
 const serviceHero: React.FC<serviceHeroProps> = ({
-  title = "The Services We Offer",
+  title = "What We Do",
   subtitle = "",
   description = "We combine technology, expertise, and sustainability to create smarter ways of generating and managing energy",
   className = ""

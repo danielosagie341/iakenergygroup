@@ -1,6 +1,7 @@
 // sections/AboutUsHero.tsx
 import React from 'react';
 import AboutUsHeroImg from '../assets/images/AboutUsHero.svg';
+import logo from '../assets/partial-logo.svg';
 import { scrollToElement } from '../utils/scrollToFooter';
 
 interface AboutUsHeroProps {
@@ -23,14 +24,16 @@ const AboutUsHero: React.FC<AboutUsHeroProps> = ({
       {/* Background Image */}
       <div className="absolute inset-0">
         {/* Overlay */}
-        <div className="absolute inset-0 bg-white bg-opacity-20" />
+        <div className="absolute inset-0 bg-black bg-opacity-20" />
       </div>
       
       {/* Content */}
       <div className="relative z-10 text-center text-white px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
         {/* Title */}
-        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 leading-tight">
-          About <span className='text-black'>I</span><span className='text-[#ef4444]'>A</span><span className='text-black'>K</span> Energy Group
+        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 leading-tight flex items-center justify-center">
+         {/* <span className='text-black'>I</span><span className='text-[#ef4444]'>A</span><span className='text-black'>K</span> */}
+         <img src={logo} className='inline max-w-[75px] lg:mr-5' alt="" />
+          Energy Group
         </h1>
         
         {/* Subtitle */}
